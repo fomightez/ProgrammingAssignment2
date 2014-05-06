@@ -21,6 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## retrieve the inverse from the cache.
 cacheSolve <- function(x, ...) {
         ## ReturnS a matrix that is the inverse of 'x'
+        ##inverse of a square matrix can be done with the solve function in R
         m <- x$getmean()
         if(!is.null(m)) {
                 message("getting cached data")
